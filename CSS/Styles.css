@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'trajan_probold';
+    src: url('../Fonts/trajan-pro-bold1-webfont.woff') format('woff2');
+}
+
+body {
+    min-width: 1520px;
+    min-height: 700px;
+    background-image:url("../images/TelaInicial_Background.jpeg"); background-repeat: no-repeat; 
+    background-size: cover;
+    }
+
+#Menu {
+    text-align: center;
+    padding: 2px ;
+}
+
+div ul li {
+    display:inline;
+}
+
+div ul li a {
+    display:inline;
+    padding: 15px 30px;
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+    font-family: trajan_probold; font-size: 200%;
+    
+    }
+
+div ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+    }
+
+img {
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    width: 12.5%; height: 22.5%;
+    
+}

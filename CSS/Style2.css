@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'trajan_probold';
+    src: url('trajan-pro-bold1-webfont.woff2') format('woff2');
+}
+body {
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    }
+    
+#Menu {
+    text-align: center;
+    padding: 2px;
+    display: inline;
+}
+
+#Menu ul li a {
+    display:inline;
+    padding: 30px 40px;
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+    font-family: trajan_probold; font-size: 275%;
+    
+    }
+
+#Menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+    }
+
+#Container{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+
+    background: rgba(21,24,28, 0.96);
+    color:rgb(255, 255, 255);
+    padding: 30px;
+    border: solid white 2px;
+    border-radius: 10px;
+}
+#titulo {
+    font-family: trajan_probold; font-size: 500%;
+    font-weight: bold;
+}
+p {
+    font-size: 150%;
+}
+#sinopse{
+    font-style: italic ;
+    color:#c1b1b1
+}
+#borda {
+    border: solid white 2px;
+}
+#AjustarTamanho {
+    width: 100%;
+    height: 40%;
+}
+ 
+h2 {
+    font-size: 300%;
+}
+h3 {
+    font-size: 250%;
+}
+
+
+.container {
+display: inline-block;
+  position: relative;
+  max-width: 300px;
+  margin: auto;
+  
+}
+
+.image {
+  display: inline-block;
+  width: auto;
+  height: auto;
+
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0;
+  background: rgba(23, 12, 2, 0.7); 
+  transition: .5s ease;
+  opacity:0;
+  font-size: 30px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
