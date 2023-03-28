@@ -2,6 +2,7 @@
     font-family: 'trajan_probold';
     src: url('trajan-pro-bold1-webfont.woff2') format('woff2');
 }
+
 body {
     background-repeat: no-repeat; 
     background-size: cover;
@@ -48,6 +49,7 @@ body {
 }
 p {
     font-size: 150%;
+    font-family: trajan_probold;
 }
 #sinopse{
     font-style: italic ;
