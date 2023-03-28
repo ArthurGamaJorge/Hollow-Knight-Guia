@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'trajan_probold';
-    src: url('trajan-pro-bold1-webfont.woff2') format('woff2');
+    src: url('../Fonts/trajan-pro-bold1-webfont.woff') format('woff2');
 }
 
 body {
