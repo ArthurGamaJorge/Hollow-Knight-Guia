@@ -22,7 +22,7 @@ body {
     color: #333;
     text-decoration: none;
     border-bottom:3px solid #EDEDED;
-    font-family: trajan_probold; font-size: 275%;
+    font-family: trajan_probold; font-size: 60px;
     
     }
 
@@ -33,7 +33,7 @@ body {
     }
 
 #Container{
-    width: 60%;
+    width: 950px;
     margin: auto;
     text-align: center;
 
@@ -44,11 +44,11 @@ body {
     border-radius: 10px;
 }
 #titulo {
-    font-family: trajan_probold; font-size: 500%;
+    font-family: trajan_probold; font-size: 80px;
     font-weight: bold;
 }
 p {
-    font-size: 150%;
+    font-size: 20px;
     font-family: trajan_probold;
 }
 #sinopse{
@@ -58,16 +58,19 @@ p {
 #borda {
     border: solid white 2px;
 }
-#AjustarTamanho {
-    width: 100%;
-    height: 40%;
+#Ajustar {
+    height: 100px;
 }
- 
+
+#Ajustar2 {
+    height: 220px;
+}
+
 h2 {
-    font-size: 300%;
+    font-size: 65px;
 }
 h3 {
-    font-size: 250%;
+    font-size: 50px;
 }
 
 
@@ -83,6 +86,7 @@ display: inline-block;
   display: inline-block;
   width: auto;
   height: auto;
+  height: 300px;
 
 }
 
@@ -92,7 +96,7 @@ display: inline-block;
   background: rgba(23, 12, 2, 0.7); 
   transition: .5s ease;
   opacity:0;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .container:hover .overlay {
