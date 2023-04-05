@@ -73,6 +73,21 @@ h3 {
     font-size: 50px;
 }
 
+th {
+    font-size: 35px;
+}
+
+table, td, tr, th {
+    color: white;
+    border: solid white 2px;
+    border-radius: 5px;
+    border-collapse: collapse;
+    height: 10px;
+    width: 700px;
+    text-align: center;
+    margin: auto;
+}
+
 
 .container {
 display: inline-block;
