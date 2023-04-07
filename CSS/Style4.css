@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'trajan_probold';
+    src: url('../Fonts/trajan-pro-bold1-webfont.woff') format('woff2');
+}
+
+body {
+    background-image:url('../images/Locais_Laststag.jpeg'); 
+    color: white;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    }
+
+img {
+    height: 250px;
+}
+    
+#Menu {
+    text-align: center;
+    padding: 2px;
+    display: inline;
+}
+
+#Menu ul li a {
+    display:inline;
+    padding: 30px 40px;
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+    font-family: trajan_probold; font-size: 60px;
+    
+    }
+
+#Menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+    }
+
+h1 {
+    font-family: trajan_probold;
+    font-size: 40px;
+}
+
+p {
+    font-size: 30px;
+}
+
+#container{
+    width: 950px;
+    margin: auto;
+    text-align: center;
+
+    background: rgba(21,24,28, 0.96);
+    color:rgb(255, 255, 255);
+    padding: 30px;
+    border: solid white 2px;
+    border-radius: 10px;
+}
