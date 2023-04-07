@@ -224,9 +224,3 @@ h1 {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
-@media (max-width: 600px){
-    #container {
-        width: 550px;
-    }
-}

@@ -119,9 +119,3 @@ display: inline-block;
 .container:hover .overlay {
   opacity: 1;
 }
-
-@media (max-width: 600px){
-    #container {
-        width: 550px;
-    }
-}
