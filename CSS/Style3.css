@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'trajan_probold';
+    src: url('../Fonts/trajan-pro-bold1-webfont.woff') format('woff2');
+}
+
+body {
+    background-image:url('../images/Locais_Laststag.jpeg'); 
+    color: white;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    }
+    
+#Menu {
+    text-align: center;
+    padding: 2px;
+    display: inline;
+}
+
+#Menu ul li a {
+    display:inline;
+    padding: 30px 40px;
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+    font-family: trajan_probold; font-size: 60px;
+    
+    }
+
+#Menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+    }
+
+h1 {
+    font-family: trajan_probold;
+    font-size: 20px;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.card {
+    height: 300px;
+    width: 250px;
+    border: solid white 2px;
+    background: rgba(21,24,28, 0.993);
+    border-radius: 15px;
+    margin: 15px;
+    text-align: center;
+}
+
+.imagem {
+    background-color: black;
+    height: 200px;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#imagem1 {
+    background-image: url("../images/Locais_Dirthmound.jpeg");
+}
+
+#imagem1:hover {
+    background-image: url("../images/Locais_DirthmoundMapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#imagem2 {
+    background-image: url("../images/Locais_EncruzilhadaEsquecida.jpeg");
+}
+
+#imagem2:hover {
+    background-image: url("../images/Locais_EncruzilhadaEsquecidaMapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem3 {
+    background-image: url("../images/Locais_CaminhoVerde.jpeg");
+}
+
+#imagem3:hover {
+    background-image: url("../images/Locais_CaminhoVerdemapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem4 {
+    background-image: url("../images/Locais_PicoCristal.jpeg");
+}
+
+#imagem4:hover {
+    background-image: url("../images/Locais_PicoCristalmapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem5 {
+    background-image: url("../images/Locais_HermosFungicos.jpeg");
+}
+
+#imagem5:hover {
+    background-image: url("../images/Locais_HermosFungicosmapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem6 {
+    background-image: url("../images/Locais_CaniondaNevoa.jpeg");
+}
+
+#imagem6:hover {
+    background-image: url("../images/Locais_CaniondaNevoamapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem7 {
+    background-image: url("../images/Locais_CidadedasLagrimas.jpeg");
+}
+
+#imagem7:hover {
+    background-image: url("../images/Locais_CidadedasLagrimasmapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem8 {
+    background-image: url("../images/Locais_HidroviaReal.jpeg");
+}
+
+#imagem8:hover {
+    background-image: url("../images/Locais_HidroviaRealmapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem9 {
+    background-image: url("../images/Locais_TerradoDescanso.jpeg");
+}
+
+#imagem9:hover {
+    background-image: url("../images/Locais_TerradoDescansomapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem10 {
+    background-image: url("../images/Locais_NinhoProfundo.jpeg");
+}
+
+#imagem10:hover {
+    background-image: url("../images/Locais_NinhoProfundomapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem10 {
+    background-image: url("../images/Locais_NinhoProfundo.jpeg");
+}
+
+#imagem10:hover {
+    background-image: url("../images/Locais_NinhoProfundomapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem11 {
+    background-image: url("../images/Locais_BaciaAntiga.jpeg");
+}
+
+#imagem11:hover {
+    background-image: url("../images/Locais_BaciaAntigamapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem12 {
+    background-image: url("../images/Locais_Colmeia.jpeg");
+}
+
+#imagem12:hover {
+    background-image: url("../images/Locais_Colmeiamapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem13 {
+    background-image: url("../images/Locais_PenhascosUivantes.jpeg");
+}
+
+#imagem13:hover {
+    background-image: url("../images/Locais_PenhascosUivantesmapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem14 {
+    background-image: url("../images/Locais_BordadoReino.jpeg");
+}
+
+#imagem14:hover {
+    background-image: url("../images/Locais_BordadoReinomapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#imagem15 {
+    background-image: url("../images/Locais_JardinsDaRainha.jpeg");
+}
+
+#imagem15:hover {
+    background-image: url("../images/Locais_JardinsdaRainhamapa.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
