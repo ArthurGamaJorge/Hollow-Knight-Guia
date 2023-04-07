@@ -4,8 +4,6 @@
 }
 
 body {
-    min-width: 1300px;
-    min-height: 700px;
     background-image:url("../images/TelaInicial_Background.jpeg"); background-repeat: no-repeat; 
     background-size: cover;
     background-position: center center;
@@ -18,16 +16,17 @@ body {
 }
 
 div ul li {
-    display:inline;
+    display: inline;
+    justify-content: center;
 }
 
 ul {
     margin: 40px;
     padding: 0px;
+    white-space: nowrap;
 }
 
 div ul li a {
-    display:inline;
     padding: 15px 30px;
     background-color:#EDEDED;
     color: #333;

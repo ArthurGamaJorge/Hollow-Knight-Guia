@@ -63,3 +63,9 @@ button {
     border: solid white 2px;
     border-radius: 10px;
 }
+
+@media (max-width: 600px){
+    #container {
+        width: 550px;
+    }
+}
