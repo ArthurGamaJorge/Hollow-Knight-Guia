@@ -4,10 +4,12 @@
 }
 
 body {
-    min-width: 1520px;
+    min-width: 1300px;
     min-height: 700px;
     background-image:url("../images/TelaInicial_Background.jpeg"); background-repeat: no-repeat; 
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     }
 
 #Menu {
@@ -19,6 +21,11 @@ div ul li {
     display:inline;
 }
 
+ul {
+    margin: 40px;
+    padding: 0px;
+}
+
 div ul li a {
     display:inline;
     padding: 15px 30px;
@@ -26,7 +33,7 @@ div ul li a {
     color: #333;
     text-decoration: none;
     border-bottom:3px solid #EDEDED;
-    font-family: trajan_probold; font-size: 30px;
+    font-family: trajan_probold; font-size: 25px;
     
     }
 
@@ -40,6 +47,6 @@ img {
     position: absolute;
     top: 0;
     opacity: 0.5;
-    width: 200px; height: 200px;
+    width: 125px; height: 125px;
     
 }

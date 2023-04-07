@@ -16,6 +16,7 @@ FerraoSerpenteadoDesligada = "./images/progressão_FerrãoSerpenteado.jpeg";
 FerraoPuroDesligada = "./images/progressão_FerrãoPuro.jpeg";
 ForçaInquebravelDesligada = "./images/Extra_ForçaInquebravel.jpeg";
 FuriaDosCaidosDesligada = "./images/Extra_FuriaDosCaidos.jpeg";
+dano = 0
   
   document.getElementById('FerraoVelho').addEventListener("click", function (){
     imagemV = document.getElementById('FerraoVelho').src;
@@ -146,4 +147,3 @@ document.getElementById('ForçaInquebravel').addEventListener("click", function 
 function ExibirDano() {
  document.getElementById("Dano").innerHTML = "Dano: "+dano
 }
-
