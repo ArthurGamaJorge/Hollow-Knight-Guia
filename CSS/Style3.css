@@ -18,6 +18,10 @@ body {
     display: inline;
 }
 
+ul {
+    list-style-type: none;
+}
+
 #Menu ul li a {
     display:inline;
     padding: 30px 40px;
@@ -32,7 +36,7 @@ body {
 #Menu ul li a:hover {
     background-color:#D6D6D6;
     color: #6D6D6D;
-    border-bottom:3px solid #EA0000;
+    border-bottom:3px solid #2d1e9f;
     }
 
 h1 {
@@ -54,6 +58,7 @@ h1 {
     border-radius: 15px;
     margin: 15px;
     text-align: center;
+    box-shadow: 5px 5px 10px 0px white;
 }
 
 .imagem {
