@@ -8,23 +8,14 @@ https://arthurgamajorge.github.io/Hollow-Knight-Guia/
 Explicar ao usuário o que é Hollow Knight, mostrar sua história, personagens, locais e mecânicas, além disso fazer um cálculo de dano que muda com a escolha do usuário.
 
 <h1>Linguagens</h1>
-
-<ul>
-  <li>
+<p> &nbsp&nbsp&nbsp HTML &nbsp&nbsp CSS &nbsp JavaScript</p>
+<table>
+  <td>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" width="50" height="50">
-    <p> HTML </p>
-  </li>
-  
-  <li>
     <img src="https://user-images.githubusercontent.com/129080603/230703149-ca29f32a-bd50-4cf7-bb19-b5a847af38a5.png" width="50" height="50">
-    <p> CSS </p>
-  </li>
-  
-  <li>
     <img src="https://user-images.githubusercontent.com/129080603/230703096-eea591f0-4782-466b-9cc3-f5137e53f43f.png" width="50" height="50">
-    <p> JAVASCRIPT </p>
-  </li>
-</ul>
+  </td>
+</table>
   
 
 <h1>Recursos</h1>
