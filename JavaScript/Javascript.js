@@ -9,141 +9,125 @@ function playAudio() {
   efeito.volume = 0.8;
 }
 
-FerraoVelhoDesligada = "./images/progressão_FerrãoVelho.jpeg";
-FerraoAfiadoDesligada = "./images/progressão_FerrãoAfiado.jpeg";
-FerraoCanalizadoDesligada = "./images/progressão_FerrãoCanalizado.jpeg";
-FerraoSerpenteadoDesligada = "./images/progressão_FerrãoSerpenteado.jpeg";
-FerraoPuroDesligada = "./images/progressão_FerrãoPuro.jpeg";
-ForçaInquebravelDesligada = "./images/Extra_ForçaInquebravel.jpeg";
-FuriaDosCaidosDesligada = "./images/Extra_FuriaDosCaidos.jpeg";
-dano = 0
-  
-  document.getElementById('FerraoVelho').addEventListener("click", function (){
-    imagemV = document.getElementById('FerraoVelho').src;
-    var FerraoVelhoLigada = "https://i.imgur.com/5AsLyEz.png";
-    
-    if(imagemV === FerraoVelhoLigada){
-      document.getElementById('FerraoVelho').src = FerraoVelhoDesligada;
-      dano = 0
-    } else {
-      document.getElementById('FerraoVelho').src = FerraoVelhoLigada;
+var FerraoVelhoDesligada = "./images/progressão_FerrãoVelho.jpeg";
+var FerraoAfiadoDesligada = "./images/progressão_FerrãoAfiado.jpeg";
+var FerraoCanalizadoDesligada = "./images/progressão_FerrãoCanalizado.jpeg";
+var FerraoSerpenteadoDesligada = "./images/progressão_FerrãoSerpenteado.jpeg";
+var FerraoPuroDesligada = "./images/progressão_FerrãoPuro.jpeg";
+var ForçaInquebravelDesligada = "./images/Extra_ForçaInquebravel.jpeg";
+var FuriaDosCaidosDesligada = "./images/Extra_FuriaDosCaidos.jpeg";
 
-      document.getElementById('FerraoSerpenteado').src = FerraoSerpenteadoDesligada;
-      document.getElementById('FerraoAfiado').src = FerraoAfiadoDesligada;
-      document.getElementById('FerraoCanalizado').src = FerraoCanalizadoDesligada;
-      document.getElementById('FerraoPuro').src = FerraoPuroDesligada;
-      document.getElementById('FuriaDosCaidos').src = FuriaDosCaidosDesligada;
-      document.getElementById('ForçaInquebravel').src = ForçaInquebravelDesligada;
+var FerraoVelhoLigada = "./images/Extra_FerrãoVelhoClicado.png";
+var FerraoAfiadoLigada = "./images/Extra_FerrãoAfiadoClicado.png";
+var FerraoCanalizadoLigada = "./images/Extra_FerrrãoCanalizado.png";
+var FerraoSerpenteadoLigada = "./images/Extra_FerrãoSerpenteado.png";
+var FerraoPuroLigada = "./images/Extra_FerrãoPuroClicado.png";
+var ForçaInquebravelLigada = "./images/Extra_ForçaInquebravelClicado.png";
+var FuriaDosCaidosLigada = "./images/Extra_FuriaDosCaidosClicado.png";
+
+var FerraoVelho = document.getElementById('FerraoVelho');
+var FerraoSerpenteado = document.getElementById('FerraoSerpenteado');
+var FerraoAfiado = document.getElementById('FerraoAfiado');
+var FerraoCanalizado = document.getElementById('FerraoCanalizado');
+var FerraoPuro = document.getElementById('FerraoPuro');
+var FuriaDosCaidos = document.getElementById('FuriaDosCaidos');
+var ForçaInquebravel = document.getElementById('ForçaInquebravel');
+
+var indexDefault = -1;
+var indexFerraoVelho = 0
+var indexFerraoAfiado = 1
+var indexFerraoCanalizado = 2
+var indexFerraoSerpenteado = 3
+var indexFerraoPuro = 4
+var indexLigado = indexDefault;
+var forçaInquebravelclicada = false;
+var furiaDosCaidosclicada = false;
+
+var multiplicadorForçaInquebravel = 1.5;
+var multiplicadorFuriaDosCaidos = 1.75;
+FerraoVelho.addEventListener("click", function (){
+  indexLigado = indexLigado == indexFerraoVelho? indexDefault : indexFerraoVelho
+    DesligarFerrões();
+    if(indexLigado == indexFerraoVelho){
+      FerraoVelho.src = FerraoVelhoLigada;
       dano = 5
     }
   })
+  FerraoAfiado.addEventListener("click", function (){
+    indexLigado = indexLigado == indexFerraoAfiado? indexDefault : indexFerraoAfiado
 
-  document.getElementById('FerraoAfiado').addEventListener("click", function (){
-    imagemA = document.getElementById('FerraoAfiado').src;
-    var FerraoAfiadoLigada = "https://i.imgur.com/m0nURyx.png";
-    
-    if(imagemA === FerraoAfiadoLigada){
-      document.getElementById('FerraoAfiado').src = FerraoAfiadoDesligada;
-      dano = 0
-    } else {
-      document.getElementById('FerraoAfiado').src = FerraoAfiadoLigada;
-
-      document.getElementById('FerraoSerpenteado').src = FerraoSerpenteadoDesligada;
-      document.getElementById('FerraoVelho').src = FerraoVelhoDesligada;
-      document.getElementById('FerraoCanalizado').src = FerraoCanalizadoDesligada;
-      document.getElementById('FerraoPuro').src = FerraoPuroDesligada;
-      document.getElementById('FuriaDosCaidos').src = FuriaDosCaidosDesligada;
-      document.getElementById('ForçaInquebravel').src = ForçaInquebravelDesligada;
+    DesligarFerrões();
+    if(indexLigado == indexFerraoAfiado){
+      FerraoAfiado.src = FerraoAfiadoLigada;
       dano = 9
     }
   })
 
-  document.getElementById('FerraoCanalizado').addEventListener("click", function (){
-    imagemC = document.getElementById('FerraoCanalizado').src;
-    var FerraoCanalizadoLigada = "https://i.imgur.com/5C01TLq.png";
-    
-    if(imagemC === FerraoCanalizadoLigada){
-      document.getElementById('FerraoCanalizado').src = FerraoCanalizadoDesligada;
-      dano = 0
-    } else {
-      document.getElementById('FerraoCanalizado').src = FerraoCanalizadoLigada;
+  FerraoCanalizado.addEventListener("click", function (){
+    indexLigado = indexLigado == indexFerraoCanalizado? indexDefault : indexFerraoCanalizado
 
-      document.getElementById('FerraoSerpenteado').src = FerraoSerpenteadoDesligada;
-      document.getElementById('FerraoAfiado').src = FerraoAfiadoDesligada;
-      document.getElementById('FerraoVelho').src = FerraoVelhoDesligada;
-      document.getElementById('FerraoPuro').src = FerraoPuroDesligada;
-      document.getElementById('FuriaDosCaidos').src = FuriaDosCaidosDesligada;
-      document.getElementById('ForçaInquebravel').src = ForçaInquebravelDesligada;
+    DesligarFerrões();
+    if(indexLigado == indexFerraoCanalizado){
+      FerraoCanalizado.src = FerraoCanalizadoLigada;
       dano = 13
     }
   })
 
-  document.getElementById('FerraoSerpenteado').addEventListener("click", function (){
-    imagemS = document.getElementById('FerraoSerpenteado').src;
-    var FerraoSerpenteadoLigada = "https://i.imgur.com/popG0I2.png";
-    
-    if(imagemS === FerraoSerpenteadoLigada){
-      document.getElementById('FerraoSerpenteado').src = FerraoSerpenteadoDesligada;
-      dano = 0
-    } else {
-      document.getElementById('FerraoSerpenteado').src = FerraoSerpenteadoLigada;
+  FerraoSerpenteado.addEventListener("click", function (){
+    indexLigado = indexLigado == indexFerraoSerpenteado? indexDefault : indexFerraoSerpenteado
 
-      document.getElementById('FerraoPuro').src = FerraoPuroDesligada;
-      document.getElementById('FerraoAfiado').src = FerraoAfiadoDesligada;
-      document.getElementById('FerraoCanalizado').src = FerraoCanalizadoDesligada;
-      document.getElementById('FerraoVelho').src = FerraoVelhoDesligada;
-      document.getElementById('FuriaDosCaidos').src = FuriaDosCaidosDesligada;
-      document.getElementById('ForçaInquebravel').src = ForçaInquebravelDesligada;;;
+    DesligarFerrões();
+    if(indexLigado == indexFerraoSerpenteado){
+      FerraoSerpenteado.src = FerraoSerpenteadoLigada;
       dano = 17
     }
   })
 
-  document.getElementById('FerraoPuro').addEventListener("click", function (){
-    imagemP = document.getElementById('FerraoPuro').src;
-    var FerraoPuroLigada = "https://i.imgur.com/8iUIsjB.png";
-    
-    if(imagemP === FerraoPuroLigada){
-      document.getElementById('FerraoPuro').src = FerraoPuroDesligada;
-      dano = 0
-    } else {
-      document.getElementById('FerraoPuro').src = FerraoPuroLigada;
+  FerraoPuro.addEventListener("click", function (){
+    indexLigado = indexLigado == indexFerraoPuro? indexDefault : indexFerraoPuro
 
-      document.getElementById('FerraoSerpenteado').src = FerraoSerpenteadoDesligada;
-      document.getElementById('FerraoAfiado').src = FerraoAfiadoDesligada;
-      document.getElementById('FerraoCanalizado').src = FerraoCanalizadoDesligada;
-      document.getElementById('FerraoVelho').src = FerraoVelhoDesligada;
-      document.getElementById('FuriaDosCaidos').src = FuriaDosCaidosDesligada;
-      document.getElementById('ForçaInquebravel').src = ForçaInquebravelDesligada;
+    DesligarFerrões();
+    if(indexLigado == indexFerraoPuro){
+      FerraoPuro.src = FerraoPuroLigada;
       dano = 21
     }
   })
 
-  document.getElementById('FuriaDosCaidos').addEventListener("click", function (){
-    imagemFC = document.getElementById('FuriaDosCaidos').src;
-    var FuriaDosCaidosLigada = "https://i.imgur.com/WV7BvS6.png";
-    
-    if(imagemFC === FuriaDosCaidosLigada){
-      document.getElementById('FuriaDosCaidos').src = FuriaDosCaidosDesligada;
-      dano = Math.round(dano/1.75)
-    } else {
-      document.getElementById('FuriaDosCaidos').src = FuriaDosCaidosLigada;
-      dano = Math.round(dano*1.75)
-    }
+  FuriaDosCaidos.addEventListener("click", function (){
+
+    furiaDosCaidosclicada = !furiaDosCaidosclicada;
+    FuriaDosCaidos.src = furiaDosCaidosclicada? FuriaDosCaidosLigada : FuriaDosCaidosDesligada;
 })
 
-document.getElementById('ForçaInquebravel').addEventListener("click", function (){
-  imagemFI = document.getElementById('ForçaInquebravel').src;
-  var ForçaInquebravelLigada = "https://i.imgur.com/44JYcCf.png";
-  
-  if(imagemFI === ForçaInquebravelLigada){
-    document.getElementById('ForçaInquebravel').src = ForçaInquebravelDesligada;
-    dano = Math.round(dano/1.5)
-  } else {
-    document.getElementById('ForçaInquebravel').src = ForçaInquebravelLigada;
-    dano = Math.round(dano*1.5)
-  }
+ForçaInquebravel.addEventListener("click", function (){
+  forçaInquebravelclicada = !forçaInquebravelclicada;
+  ForçaInquebravel.src = forçaInquebravelclicada? ForçaInquebravelLigada:ForçaInquebravelDesligada;
 })
 
 function ExibirDano() {
- document.getElementById("Dano").innerHTML = "Dano: "+dano
+ document.getElementById("Dano").innerHTML = "Dano: "+ CalcularDano()
+}
+
+function CalcularDano(){
+
+  if(indexLigado == indexFerraoAfiado){
+    return Math.round(Math.round(dano 
+      * (forçaInquebravelclicada? multiplicadorForçaInquebravel : 1))
+      * (furiaDosCaidosclicada? multiplicadorFuriaDosCaidos : 1)-0.1);
+  }
+
+  else {
+  return Math.round(Math.round(dano 
+  * (forçaInquebravelclicada? multiplicadorForçaInquebravel : 1))
+  * (furiaDosCaidosclicada? multiplicadorFuriaDosCaidos : 1));
+  }
+  
+}
+function DesligarFerrões(){
+  FerraoVelho.src = FerraoVelhoDesligada;
+  FerraoSerpenteado.src = FerraoSerpenteadoDesligada;
+  FerraoAfiado.src = FerraoAfiadoDesligada;
+  FerraoCanalizado.src = FerraoCanalizadoDesligada;
+  FerraoPuro.src = FerraoPuroDesligada;
+  dano = 0;
 }
