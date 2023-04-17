@@ -229,3 +229,15 @@ h1 {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
+#imagem16 {
+    background-image: url("../images/Locais_Godhome.jpeg");
+}
+
+#imagem16:hover {
+    background-image: url("../images/Locais_Godhomemapa.jpeg");
+    background-size: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
