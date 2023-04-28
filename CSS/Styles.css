@@ -1,4 +1,9 @@
-@font-face {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    @font-face {
     font-family: 'trajan_probold';
     src: url('../Fonts/trajan-pro-bold1-webfont.woff') format('woff2');
 }
@@ -8,11 +13,14 @@ body {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    height: 90vh;
+    width: 90vw;
     }
 
-#Menu {
+.Menu {
     text-align: center;
-    padding: 2px ;
+    margin: auto;
+    width: 100vw;
 }
 
 div ul li {
@@ -50,8 +58,38 @@ img {
     
 }
 
-@media (max-width: 900px){
-    html, body {
-        overflow-y: hidden;
-      }
+audio {
+    width: 300px;
+}
+
+@media (max-width: 900px) {
+    div ul li {
+        display: inline;
+        padding-bottom: 225px;
+
+    }
+    div ul li a {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    img {
+        visibility: hidden;
+    }
+    audio {
+        width: 200px;
+    }
+    .Menu {
+        position: absolute;
+        top: 10px;
+    }
+    .Lista {
+        position: absolute;        
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        white-space: normal;
+        line-height: 35px;
+    }
+
 }
