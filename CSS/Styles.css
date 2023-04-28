@@ -64,7 +64,7 @@ audio {
 
 @media (max-width: 900px) {
     body {
-        overflow-x: hidden;
+        overflow-y: hidden;
     }
     div ul li {
         display: inline;
