@@ -1,42 +1,3 @@
-@font-face {
-    font-family: 'trajan_probold';
-    src: url('../Fonts/trajan-pro-bold1-webfont.woff') format('woff2');
-}
-
-body {
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    }
-
-    
-ul {
-    list-style-type: none;
-}
-
-#Menu {
-    text-align: center;
-    padding: 2px;
-    display: inline;
-}
-
-#Menu ul li a {
-    display:inline;
-    padding: 30px 40px;
-    background-color:#EDEDED;
-    color: #333;
-    text-decoration: none;
-    border-bottom:3px solid #EDEDED;
-    font-family: trajan_probold; font-size: 60px;
-    }
-
-#Menu ul li a:hover {
-    background-color:#D6D6D6;
-    color: #6D6D6D;
-    border-bottom:3px solid #2d1e9f;
-    }
-
 #Container{
     width: 950px;
     margin: auto;
@@ -99,26 +60,8 @@ display: inline-block;
   position: relative;
   max-width: 300px;
   margin: auto;
-  
-}
-
-.image {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  height: 300px;
-
 }
 
 .overlay {
-  position: absolute; 
-  bottom: 0;
   background: rgba(23, 12, 2, 0.7); 
-  transition: .5s ease;
-  opacity:0;
-  font-size: 20px;
-}
-
-.container:hover .overlay {
-  opacity: 1;
 }

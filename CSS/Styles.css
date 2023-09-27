@@ -49,3 +49,9 @@ img {
     width: 125px; height: 125px;
     
 }
+
+@media (max-width: 900px){
+    html, body {
+        overflow-y: hidden;
+      }
+}
